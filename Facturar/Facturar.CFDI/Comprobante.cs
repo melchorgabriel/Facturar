@@ -7,7 +7,6 @@ namespace Facturar.CFDI
 {
    public  class Comprobante
     {
-
         
         public string Version { get { return "3.3"; } }
 
@@ -23,7 +22,6 @@ namespace Facturar.CFDI
         [Required]
         public String Sello { get; set; }
 
-
         public int FormaPago { get; set; }// catalogo forma de pago
 
         [Required]
@@ -33,20 +31,46 @@ namespace Facturar.CFDI
         [Required]
         public String Certificado { get; set; }
 
-        public int CondicionesDePago { get; set; }
+        [StringLength(1000)]
+        public String CondicionesDePago { get; set; }
+
         [Required]
-        public int SubTotal { get; set; }
-        public int Descuento { get; set; }
+        public Double SubTotal { get; set; }
+
+        public Double Descuento { get; set; }
+
         [Required]
-        public int Moneda { get; set; }
-        public int TipoCambio { get; set; }
+        public int Moneda { get; set; } // catalogo monedas
+
+        public Double TipoCambio { get; set; }
+
         [Required]
-        public int Total { get; set; }
+        public Double Total { get; set; }
+
         [Required]
-        public int TipoDeComprobante { get; set; }
-        public int MetodoPago { get; set; }
+        public int TipoDeComprobante { get; set; } // catalogo tipo comprobante
+
+        public int MetodoPago { get; set; } // catalogo metodo pago
+
         [Required]
-        public int LugarExpedicion { get; set; }
-        public int Confirmacion { get; set; }
+        public int LugarExpedicion { get; set; } // catalogo codigo Postal
+
+        [StringLength(5)]
+        public String Confirmacion { get; set; }
+   
+
+        private CfdiRelacionados _CfdiRelacionados;
+          
+    
+        public void CfdiRelacionados(int tipoRelacion)
+        {
+            _CfdiRelacionados = new  CfdiRelacionados(tipoRelacion);
+        }
+        public CfdiRelacionados CfdiRelacionados()
+        {
+            return _CfdiRelacionados;
+        }
+
+
     }
 }

@@ -60,8 +60,8 @@ namespace Facturar.CFDI
    
 
         private CfdiRelacionados _CfdiRelacionados;
-          
-    
+        private Emisor _emisor;
+        
         public void CfdiRelacionados(int tipoRelacion)
         {
             _CfdiRelacionados = new  CfdiRelacionados(tipoRelacion);
@@ -69,6 +69,11 @@ namespace Facturar.CFDI
         public CfdiRelacionados CfdiRelacionados()
         {
             return _CfdiRelacionados;
+        }
+
+        public void Emisor()
+        {
+
         }
 
 

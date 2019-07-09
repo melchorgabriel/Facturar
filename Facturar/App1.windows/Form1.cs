@@ -1,14 +1,6 @@
-﻿using Facturar.CFDI;
-using Facturar.CFDI.Catalogos;
-using Facturar.CFDI.Data;
+﻿using Facturar.CFDI.Catalogos;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace App1.windows
@@ -17,9 +9,8 @@ namespace App1.windows
     {
 
         //Comprobante comprobante;
-        List<c_FormaPago> formaPagos = new List<c_FormaPago>();
-        C_FormaPagoAD ad;
-
+        
+    
         public Form1()
         {
             InitializeComponent();
@@ -27,14 +18,27 @@ namespace App1.windows
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            formaPagos = new List<c_FormaPago>();
-            ad = new C_FormaPagoAD();
-            formaPagos = ad.ListaFormaPago();
 
-
-            this.comboBox1.DataSource = formaPagos;
+            c_FormaPago cfp = new c_FormaPago();
+            this.comboBox1.DataSource = cfp.Lista();
             this.comboBox1.DisplayMember = "Descripcion";
             this.comboBox1.ValueMember = "Id";
+
+            C_Aduana ca = new C_Aduana();
+            this.comboBox2.DataSource = ca.Lista();
+            this.comboBox2.DisplayMember = "Descripcion";
+            this.comboBox2.ValueMember = "Id";
+
+            C_ClaveProdServ ccps = new C_ClaveProdServ();
+            this.comboBox3.DataSource = ccps.Lista();
+            this.comboBox3.DisplayMember = "Descripcion";
+            this.comboBox3.ValueMember = "Id";
+
+            C_ClaveUnidad ccu = new C_ClaveUnidad();
+            this.comboBox4.DataSource = ccu.Lista();
+            this.comboBox4.DisplayMember = "Nombre";
+            this.comboBox4.ValueMember = "Id";
+
 
         }
     }

@@ -5,11 +5,75 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="jSon\c_Aduana.json" />
+    <None Remove="jSon\c_ClaveProdServ.json" />
+    <None Remove="jSon\c_ClaveUnidad.json" />
+    <None Remove="jSon\c_CodigoPostal.json" />
     <None Remove="jSon\c_FormaPago.json" />
+    <None Remove="jSon\c_Impuesto.json" />
+    <None Remove="jSon\c_MetodoPago.json" />
+    <None Remove="jSon\c_Moneda.json" />
+    <None Remove="jSon\c_NumPedimentoAduana.json" />
+    <None Remove="jSon\c_Pais.json" />
+    <None Remove="jSon\c_PatenteAduanal.json" />
+    <None Remove="jSon\c_RegimenFiscal.json" />
+    <None Remove="jSon\c_TasaOCuota.json" />
+    <None Remove="jSon\c_TipoDeComprobante.json" />
+    <None Remove="jSon\c_TipoFactor.json" />
+    <None Remove="jSon\c_TipoRelacion.json" />
+    <None Remove="jSon\c_UsoCFDI.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="jSon\c_Aduana.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_ClaveProdServ.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_ClaveUnidad.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_CodigoPostal.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="jSon\c_FormaPago.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_Impuesto.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_MetodoPago.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_Moneda.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_NumPedimentoAduana.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_Pais.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_PatenteAduanal.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_RegimenFiscal.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_TasaOCuota.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_TipoDeComprobante.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_TipoFactor.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_TipoRelacion.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jSon\c_UsoCFDI.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

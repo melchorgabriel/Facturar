@@ -1,4 +1,5 @@
-﻿using Facturar.CFDI.Catalogos;
+﻿using Facturar.CFDI;
+using Facturar.CFDI.Catalogos;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -8,7 +9,7 @@ namespace App1.windows
     public partial class Form1 : Form
     {
 
-        //Comprobante comprobante;
+        Comprobante comprobante;
         
     
         public Form1()
@@ -40,6 +41,14 @@ namespace App1.windows
             this.comboBox4.ValueMember = "Id";
 
 
+        }
+
+      
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            comprobante = new Comprobante();
+            comprobante.Serie=
         }
     }
 }

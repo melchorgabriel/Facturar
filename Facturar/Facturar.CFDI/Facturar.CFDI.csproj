@@ -17,7 +17,6 @@
     <None Remove="jSon\c_Pais.json" />
     <None Remove="jSon\c_PatenteAduanal.json" />
     <None Remove="jSon\c_RegimenFiscal.json" />
-    <None Remove="jSon\c_TasaOCuota.json" />
     <None Remove="jSon\c_TipoDeComprobante.json" />
     <None Remove="jSon\c_TipoFactor.json" />
     <None Remove="jSon\c_TipoRelacion.json" />
@@ -59,9 +58,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="jSon\c_RegimenFiscal.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="jSon\c_TasaOCuota.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="jSon\c_TipoDeComprobante.json">

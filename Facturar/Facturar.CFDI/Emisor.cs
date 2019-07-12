@@ -7,11 +7,11 @@ namespace Facturar.CFDI
 {
    public class Emisor
     {
-        public Emisor()
-        {
-        }
+        private string _Rfc="";
+        private string _nombre="";
+        private string _regimenFiscal;
 
-        public Emisor(string rfc, int regimenFiscal, string nombre = "")
+        public Emisor(string rfc, string regimenFiscal, string nombre="")
         {
             Rfc = rfc;
             Nombre = nombre;
@@ -19,14 +19,16 @@ namespace Facturar.CFDI
         }
 
         [Required]
-        public String Rfc { get; set; }
-
+        [StringLength(13)]
+        public string Rfc { get => _Rfc; set => _Rfc = value; }
         [StringLength(254)]
-        public String Nombre { get; set; }
-
+        public string Nombre { get => _nombre; set => _nombre = value; }
         [Required]
-        public int RegimenFiscal { get; set; }// catalogo codigo Postal
+        [StringLength(3)]
+        public string RegimenFiscal { get => _regimenFiscal; set => _regimenFiscal = value; }
 
        
+
+
     }
 }
